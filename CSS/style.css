@@ -1,0 +1,175 @@
+/* Start Variable Color */
+:root {
+  --White-color: hsl(0, 0%, 100%);
+  --Stone1-color: hsl(30, 54%, 90%);
+  --Stone2-color: hsl(30, 18%, 87%);
+  --Stone3-color: hsl(30, 10%, 34%);
+  --Stone4-color: hsl(24, 5%, 18%);
+  --Brown-color: hsl(14, 45%, 36%);
+  --Rose1-color: hsl(332, 51%, 32%);
+  --Rose2-color: hsl(330, 100%, 98%);
+}
+/* End Variable Color */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  margin: 80px;
+}
+@media(max-width: 767px) {
+    body {
+        margin: 20px;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+section.omelette img {
+  width: 100%;
+  border-radius: 15px;
+}
+section.omelette .text h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+}
+@media(max-width: 7678px) {
+    section.omelette .text h1 {
+        font-size: 35px;
+    }
+}
+section.omelette .text p {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+  opacity: 0.7;
+}
+@media (max-width: 767px) {
+  section.omelette .text p {
+    font-size: 20px;
+  }
+}
+section.omelette .preparation {
+  margin: 50px 25px;
+  background-color: var(--Stone1-color);
+  padding: 30px;
+  border-radius: 15px;
+}
+section.omelette .preparation h3 {
+  margin: 0;
+  color: var(--Rose1-color);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+section.omelette .preparation ul {
+  list-style: disc;
+}
+section.omelette .preparation ul li {
+  padding: 10px 10px;
+  color: var(--Stone3-color);
+  font-size: 20px;
+}
+section.omelette .preparation ul li span {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+section.omelette .preparation ul li::marker {
+  color: var(--Rose1-color);
+}
+section.omelette h3 {
+  margin: 0;
+  color: var(--Brown-color);
+  font-weight: 800;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+}
+section.omelette ul {
+  list-style: square;
+}
+section.omelette ul li {
+  padding: 5px 10px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: var(--Stone3-color);
+}
+section.omelette ul li::marker {
+  color: var(--Brown-color);
+}
+hr {
+  border: 1px solid var(--Stone3-color);
+}
+/* End Header */
+/* Start Section Instruction */
+.ins {
+  padding: 30px 0;
+}
+.ins .container h3 {
+  margin: 0;
+  color: var(--Brown-color);
+  font-weight: 800;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+}
+.ins .container ol {
+  margin: 0;
+  padding: 10px 20px;
+}
+.ins .container ol li {
+  padding: 10px 10px;
+  color: var(--Stone3-color);
+  font-size: 20px;
+}
+.ins .container ol li::marker {
+  color: var(--Brown-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+.ins .container ol li span {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+/* End Section Instruction */
+/* Start section Nutrition */
+.nut {
+  padding: 30px 0;
+}
+.nut .container h3 {
+  margin: 0;
+  color: var(--Brown-color);
+  font-weight: 800;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+}
+.nut .container p {
+    color: var(--Stone3-color);
+    font-size: 20px;
+}
+.nut .container div {
+    padding: 15px 20px;
+    color: var(--Stone3-color);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.nut .container div span {
+    color: var(--Brown-color);
+    display: block;
+    text-align: center;
+}
+.nut .container div:not(:last-child) {
+    border-bottom: 1px solid var(--Stone3-color);
+}
+/* end Section Nutrition */
